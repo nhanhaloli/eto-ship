@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+  <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+  <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+  <link href="../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+  <link href="dist/css/style.min.css" rel="stylesheet">
+  <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
+</head>
+
+<body class="horizontal-nav skin-megna fixed-layout">
+  <div class="preloader">
+    <div class="loader">
+      <div class="loader__figure"></div>
+      <p class="loader__label">Eto ship</p>
+    </div>
+  </div>
+  <div id="main-wrapper">
+    <header class="topbar">
+      <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <b>
+              <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+              <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+            </b>
+            <span class="hidden-sm-down">
+              <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+              <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+            </span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <aside class="left-sidebar">
+      <div class="scroll-sidebar">
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="icon-speedometer"></i>
+                <span class="hide-menu">Tạo tài khoản</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="tao-tai-khoan.html">Khách hàng</a></li>
+                <li><a href="shipper.html">Shipper</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="ti-layout-grid2"></i>
+                <span class="hide-menu">Đơn hàng</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="index.html">Soạn đơn</a></li>
+                <li><a href="#">Đã soạn</a></li>
+                <li><a href="#">Đã nhận</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="page-wrapper">
+      <div class="container-fluid">
+        <div class="row page-titles">
+          <div class="align-self-center">
+            <button class="btn waves-effect waves-light btn-primary"><i class="fas fa-arrow-left"></i>
+              <a class="text-white" href="tao-tai-khoan.html">Quay lại</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <form action="#">
+              <div class="form-body">
+                <h3 class="card-title">Tạo khách hàng</h3>
+                <hr>
+                <div class="row p-t-20">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">Mã khách hàng<span class="text-danger">*</span></label>
+                      <input type="text" name="maKhachHang" class="form-control" placeholder="Mã khách hàng" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">Tên khách hàng<span class="text-danger">*</span></label>
+                      <div class="controls">
+                        <input required type="text" name="tenKhachHang" class="form-control form-control"
+                          placeholder="Tên khách hàng">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">Password<span class="text-danger">*</span></label>
+                      <input type="password" required class="form-control" name="password" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">CMND<span class="text-danger">*</span></label>
+                      <input required type="text" name="CMND" class="form-control" placeholder="Chứng minh nhân dân">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">Địa chỉ<span class="text-danger">*</span></label>
+                      <textarea class="form-control" rows="5" name="address" required placeholder="Địa chỉ"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">Ghi chú</label>
+                      <textarea class="form-control" rows="5" name="note" placeholder="Ghi chú"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">Nhóm<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" name="group" required placeholder="Nhóm"></input>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">VIP</label>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="form-check-input" name="VIP" value="VIP">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-success text-white"> <i class="fa fa-check"></i> Save</button>
+                <button type="button" class="btn btn-inverse">
+                  <a href="index.html">Cancel</a>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="dist/js/waves.js"></script>
+  <script src="dist/js/sidebarmenu.js"></script>
+  <script src="dist/js/custom.min.js"></script>
+  <script src="../assets/node_modules/raphael/raphael-min.js"></script>
+  <script src="../assets/node_modules/morrisjs/morris.min.js"></script>
+  <script src="../assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script src="dist/js/dashboard1.js"></script>
+  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script>
+    $(function () {
+      $('#chat, #msg, #comment, #todo').perfectScrollbar();
+    });
+  </script>
+</body>
+
+</html>

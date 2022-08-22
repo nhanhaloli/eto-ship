@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+  <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+  <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+  <link href="../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+  <link href="dist/css/style.min.css" rel="stylesheet">
+  <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
+</head>
+
+<body class="horizontal-nav skin-megna fixed-layout">
+  <div class="preloader">
+    <div class="loader">
+      <div class="loader__figure"></div>
+      <p class="loader__label">Eto ship</p>
+    </div>
+  </div>
+  <div id="main-wrapper">
+    <header class="topbar">
+      <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <b>
+              <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+              <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+            </b>
+            <span class="hidden-sm-down">
+              <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+              <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+            </span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <aside class="left-sidebar">
+      <div class="scroll-sidebar">
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="icon-speedometer"></i>
+                <span class="hide-menu">Tạo tài khoản</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="tao-tai-khoan.html">Khách hàng</a></li>
+                <li><a href="shipper.html">Shipper</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="ti-layout-grid2"></i>
+                <span class="hide-menu">Đơn hàng</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="index.html">Soạn đơn</a></li>
+                <li><a href="da-soan.html">Đã soạn</a></li>
+                <li><a href="da-nhan.html">Đã nhận</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="page-wrapper">
+      <div class="container-fluid">
+        <div class="row page-titles">
+          <div class="align-self-center">
+            <button class="btn waves-effect waves-light btn-primary"><i class="fas fa-arrow-left"></i>
+              <a class="text-white" href="da-soan.html">Quay lại</a>
+            </button>
+          </div>
+        </div>
+        <div class="row page-titles">
+          <div class="col-md-5 align-self-center">
+            <h4 class="text-themecolor">Danh sách đơn hàng</h4>
+            <small>Số lượng: 2</small>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <div class="card">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table color-table primary-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Mã KH</th>
+                      <th>Thời gian</th>
+                      <th>Nội dung</th>
+                      <th>Địa chỉ</th>
+                      <th>Thu / chi</th>
+                      <th>Người soạn</th>
+                      <th>Trạng thái</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>002</td>
+                      <td>Nigam</td>
+                      <td>sdf</td>
+                      <td>ha Noi</td>
+                      <td>200/265</td>
+                      <td>Abc</td>
+                      <td>Lưu kho</td>
+                      <td class="d-flex justify-content-around">
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Báo cáo">
+                          <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Xác nhận hoàn trả">
+                          <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Soạn lại">
+                          <i class="fas fa-reply-all"></i>
+                        </div>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Lưu kho">
+                          <i class="fas fa-save"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>003</td>
+                      <td>Nigam</td>
+                      <td>zxcv</td>
+                      <td>Ho Chi Minh</td>
+                      <td>200/265</td>
+                      <td>Abc</td>
+                      <td>Đã giao</td>
+                      <td class="d-flex justify-content-around">
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Báo cáo">
+                          <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Xác nhận hoàn trả">
+                          <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Soạn lại">
+                          <i class="fas fa-reply-all"></i>
+                        </div>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Lưu kho">
+                          <i class="fas fa-save"></i>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="dist/js/waves.js"></script>
+  <script src="dist/js/sidebarmenu.js"></script>
+  <script src="dist/js/custom.min.js"></script>
+  <script src="../assets/node_modules/raphael/raphael-min.js"></script>
+  <script src="../assets/node_modules/morrisjs/morris.min.js"></script>
+  <script src="../assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script src="dist/js/dashboard1.js"></script>
+  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script>
+    $(function () {
+      $('#chat, #msg, #comment, #todo').perfectScrollbar();
+    });
+  </script>
+</body>
+
+</html>
