@@ -65,86 +65,52 @@
                 <li><a href="da-giao.html">Đã giao</a></li>
               </ul>
             </li>
-            <li>
-              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <i class="ti-layout-grid2"></i>
-                <span class="hide-menu">Kiểm tra</span>
-              </a>
-              <ul aria-expanded="false" class="collapse">
-                <li><a href="kiem-tra/luu-kho.html">Lưu kho</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <i class="ti-layout-grid2"></i>
-                <span class="hide-menu">COD</span>
-              </a>
-              <ul aria-expanded="false" class="collapse">
-                <li><a href="COD/ship-cod.html">Ship COD</a></li>
-                <li><a href="kiem-tra/luu-kho.html">Thanh Toan</a></li>
-              </ul>
-            </li>
           </ul>
         </nav>
       </div>
     </aside>
     <div class="page-wrapper">
       <div class="container-fluid">
-        <div class="card">
-          <div class="card-body">
-            <form action="#">
-              <div class="form-body">
-                <h3 class="card-title">Tạo đơn hàng</h3>
-                <hr>
-                <div class="row p-t-20">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="form-label">Mã khách hàng<span class="text-danger">*</span></label>
-                      <input type="text" name="maKhachHang" class="form-control" placeholder="Mã khách hàng" required>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="form-label">Thu / Chi<span class="text-danger">*</span></label>
-                      <input required type="text" name="inOutCome" class="form-control" placeholder="Thu / Chi">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="form-label">Nội dung<span class="text-danger">*</span></label>
-                      <textarea class="form-control" rows="5" name="content" required placeholder="Nội dung"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="form-label">Địa chỉ<span class="text-danger">*</span></label>
-                      <textarea class="form-control" rows="5" name="address" required placeholder="Địa chỉ"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="form-label">Nhắc hẹn<span class="text-danger">*</span></label>
-                      <input class="form-control" type="datetime-local" name="event">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="form-label">Lưu kho<span class="text-danger">*</span></label>
-                      <input type="text" class="form-control" name="save" required placeholder="Lưu kho"></input>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-success text-white"> <i class="fa fa-check"></i> Save</button>
-                  <button type="button" class="btn btn-inverse">
-                    <a href="index.html">Cancel</a>
-                  </button>
-                </div>
-            </form>
+        <div class="row page-titles">
+          <div class="col-md-5 align-self-center">
+            <h4 class="text-themecolor">Danh sách khách hàng</h4>
+            <small>Số lượng: 1</small>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <div class="card">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table color-table primary-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Mã KH</th>
+                      <th>Nhóm</th>
+                      <th>Thu / chi</th>
+                      <th>Tổng số</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">002</a>
+                      </td>
+                      <td>A</td>
+                      <td>200/265</td>
+                      <td>2 đơn hàng</td>
+                      <td>
+                        <div data-bs-toggle="tooltip" data-placement="top" title="Chi tiết">
+                          <a href="liet-ke-don-hang.html"><i class="fas fa-clipboard-list"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>

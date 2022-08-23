@@ -9,10 +9,10 @@
   <meta name="author" content="">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
   <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
-  <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
-  <link href="../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
-  <link href="dist/css/style.min.css" rel="stylesheet">
-  <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
+  <link href="../../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+  <link href="../../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+  <link href="../dist/css/style.min.css" rel="stylesheet">
+  <link href="../dist/css/pages/dashboard1.css" rel="stylesheet">
 </head>
 
 <body class="horizontal-nav skin-megna fixed-layout">
@@ -62,6 +62,7 @@
                 <li><a href="index.html">Soạn đơn</a></li>
                 <li><a href="da-soan.html">Đã soạn</a></li>
                 <li><a href="da-nhan.html">Đã nhận</a></li>
+                <li><a href="da-giao.html">Đã giao</a></li>
               </ul>
             </li>
           </ul>
@@ -85,8 +86,8 @@
                     <tr>
                       <th>#</th>
                       <th>Mã KH</th>
-                      <th>Tên</th>
-                      <th>Hẹn</th>
+                      <th>Nhóm</th>
+                      <th>Thu / chi</th>
                       <th>Tổng số</th>
                       <th>Action</th>
                     </tr>
@@ -97,9 +98,9 @@
                       <td>
                         <a href="#">002</a>
                       </td>
-                      <td>Nigam</td>
-                      <td>1 đơn hàng</td>
-                      <td>1 đơn hàng</td>
+                      <td>A</td>
+                      <td>200/265</td>
+                      <td>2 đơn hàng</td>
                       <td>
                         <div data-bs-toggle="tooltip" data-placement="top" title="Chi tiết">
                           <a href="liet-ke-don-hang.html"><i class="fas fa-clipboard-list"></i></a>
@@ -115,18 +116,18 @@
       </div>
     </div>
   </div>
-  <script src="../assets/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
-  <script src="dist/js/waves.js"></script>
-  <script src="dist/js/sidebarmenu.js"></script>
-  <script src="dist/js/custom.min.js"></script>
-  <script src="../assets/node_modules/raphael/raphael-min.js"></script>
-  <script src="../assets/node_modules/morrisjs/morris.min.js"></script>
-  <script src="../assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
-  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
-  <script src="dist/js/dashboard1.js"></script>
-  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script src="../../assets/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../dist/js/waves.js"></script>
+  <script src="../dist/js/sidebarmenu.js"></script>
+  <script src="../dist/js/custom.min.js"></script>
+  <script src="../../assets/node_modules/raphael/raphael-min.js"></script>
+  <script src="../../assets/node_modules/morrisjs/morris.min.js"></script>
+  <script src="../../assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script src="../dist/js/dashboard1.js"></script>
+  <script src="../../assets/node_modules/toast-master/js/jquery.toast.js"></script>
   <script>
     $(function () {
       $('#chat, #msg, #comment, #todo').perfectScrollbar();
