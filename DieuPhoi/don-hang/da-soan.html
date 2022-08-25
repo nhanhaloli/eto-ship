@@ -9,10 +9,10 @@
   <meta name="author" content="">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
   <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
-  <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
-  <link href="../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
-  <link href="dist/css/style.min.css" rel="stylesheet">
-  <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
+  <link href="../../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+  <link href="../../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+  <link href="../dist/css/style.min.css" rel="stylesheet">
+  <link href="../dist/css/pages/dashboard1.css" rel="stylesheet">
 </head>
 
 <body class="horizontal-nav skin-megna fixed-layout">
@@ -60,10 +60,10 @@
               </a>
               <ul aria-expanded="false" class="collapse">
                 <li><a href="../index.html">Soạn đơn</a></li>
-                <li><a href="../don-hang/da-soan.html">Đã soạn</a></li>
-                <li><a href="../don-hang/da-nhan.html">Đã nhận</a></li>
-                <li><a href="../don-hang/da-giao.html">Đã giao</a></li>
-                <li><a href="../don-hang/hoan-tra.html">Hoàn trả</a></li>
+                <li><a href="don-hang/da-soan.html">Đã soạn</a></li>
+                <li><a href="don-hang/da-nhan.html">Đã nhận</a></li>
+                <li><a href="don-hang/da-giao.html">Đã giao</a></li>
+                <li><a href="don-hang/hoan-tra.html">Hoàn trả</a></li>
               </ul>
             </li>
             <li>
@@ -81,8 +81,37 @@
                 <span class="hide-menu">COD</span>
               </a>
               <ul aria-expanded="false" class="collapse">
-                <li><a href="ship-cod.html">Ship COD</a></li>
-                <li><a href="#">Thanh Toan</a></li>
+                <li><a href="../COD/ship-cod.html">Ship COD</a></li>
+                <li><a href="../COD/thanh-toan.html">Thanh Toan</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="hide-menu">Tổng quan</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="../tong-quan/ban-do.html">Bản đồ</a></li>
+                <li><a href="../tong-quan/shipper.html">Chi tiết</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="fas fa-calendar-check"></i>
+                <span class="hide-menu">Lịch làm</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="../lich-lam/tong-quan.html">Tổng quan</a></li>
+                <li><a href="../lich-lam/mao.html">Mạo</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="fas fa-info-circle"></i>
+                <span class="hide-menu">Thông tin cá nhân</span>
+              </a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="../thong-tin-ca-nhan/index.html">Thông tin cá nhân</a></li>
               </ul>
             </li>
           </ul>
@@ -123,7 +152,7 @@
                       <td>1 đơn hàng</td>
                       <td>
                         <div data-bs-toggle="tooltip" data-placement="top" title="Chi tiết">
-                          <a href="liet-ke-don-hang.html"><i class="fas fa-clipboard-list"></i></a>
+                          <a href="../COD/liet-ke-don-hang.html"><i class="fas fa-clipboard-list"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -136,18 +165,18 @@
       </div>
     </div>
   </div>
-  <script src="../assets/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
-  <script src="dist/js/waves.js"></script>
-  <script src="dist/js/sidebarmenu.js"></script>
-  <script src="dist/js/custom.min.js"></script>
-  <script src="../assets/node_modules/raphael/raphael-min.js"></script>
-  <script src="../assets/node_modules/morrisjs/morris.min.js"></script>
-  <script src="../assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
-  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
-  <script src="dist/js/dashboard1.js"></script>
-  <script src="../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script src="../../assets/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../dist/js/waves.js"></script>
+  <script src="../dist/js/sidebarmenu.js"></script>
+  <script src="../dist/js/custom.min.js"></script>
+  <script src="../../assets/node_modules/raphael/raphael-min.js"></script>
+  <script src="../../assets/node_modules/morrisjs/morris.min.js"></script>
+  <script src="../../assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../../assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <script src="../dist/js/dashboard1.js"></script>
+  <script src="../../assets/node_modules/toast-master/js/jquery.toast.js"></script>
   <script>
     $(function () {
       $('#chat, #msg, #comment, #todo').perfectScrollbar();
