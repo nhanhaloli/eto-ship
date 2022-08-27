@@ -45,12 +45,11 @@
           <ul id="sidebarnav">
             <li>
               <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <i class="icon-speedometer"></i>
-                <span class="hide-menu">Tạo tài khoản</span>
+                <i class="ti-layout-grid2"></i>
+                <span class="hide-menu">Tài khoản</span>
               </a>
               <ul aria-expanded="false" class="collapse">
-                <li><a href="../tao-tai-khoan/tao-tai-khoan.html">Khách hàng</a></li>
-                <li><a href="../tao-tai-khoan/shipper.html">Shipper</a></li>
+                <li><a href="../../index.html">Tài khoản</a></li>
               </ul>
             </li>
             <li>
@@ -59,40 +58,19 @@
                 <span class="hide-menu">Đơn hàng</span>
               </a>
               <ul aria-expanded="false" class="collapse">
-                <li><a href="../index.html">Soạn đơn</a></li>
-                <li><a href="../don-hang/da-soan.html">Đã soạn</a></li>
                 <li><a href="../don-hang/da-nhan.html">Đã nhận</a></li>
                 <li><a href="../don-hang/da-giao.html">Đã giao</a></li>
-                <li><a href="../don-hang/hoan-tra.html">Hoàn trả</a></li>
+                <li><a href="../don-hang//hoan-tra.html">Hoàn trả</a></li>
               </ul>
             </li>
             <li>
               <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                 <i class="ti-layout-grid2"></i>
-                <span class="hide-menu">Kiểm tra</span>
+                <span class="hide-menu">Yêu cầu</span>
               </a>
               <ul aria-expanded="false" class="collapse">
-                <li><a href="../kiem-tra/luu-kho.html">Lưu kho</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <i class="ti-layout-grid2"></i>
-                <span class="hide-menu">COD</span>
-              </a>
-              <ul aria-expanded="false" class="collapse">
-                <li><a href="ship-cod.html">Ship COD</a></li>
-                <li><a href="thanh-toan.html">Thanh Toan</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <i class="fas fa-map-marker-alt"></i>
-                <span class="hide-menu">Tổng quan</span>
-              </a>
-              <ul aria-expanded="false" class="collapse">
-                <li><a href="../tong-quan/ban-do.html">Bản đồ</a></li>
-                <li><a href="../tong-quan/shipper.html">Chi tiết</a></li>
+                <li><a href="tam-ung.html">Tạm ứng</a></li>
+                <li><a href="thanh-toan.html">Thanh toán</a></li>
               </ul>
             </li>
             <li>
@@ -120,71 +98,18 @@
     </aside>
     <div class="page-wrapper">
       <div class="container-fluid">
-        <div class="row page-titles">
-          <div class="align-self-center">
-            <button class="btn waves-effect waves-light btn-primary"><i class="fas fa-arrow-left"></i>
-              <a class="text-white" href="ship-cod.html">Quay lại</a>
-            </button>
-          </div>
-        </div>
-        <div class="row page-titles">
-          <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">Danh sách shipper</h4>
-            <small>Số lượng: 2</small>
-          </div>
-        </div>
-        <div class="table-responsive">
-          <div class="card">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table color-table primary-table">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Shipper</th>
-                      <th>Số điện thoại</th>
-                      <th>COD</th>
-                      <th>Địa chỉ</th>
-                      <th>Ship</th>
-                      <th>Tạm ứng</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>A B C</td>
-                      <td>345345435</td>
-                      <td>300k</td>
-                      <td>Ha Noi</td>
-                      <td>300k</td>
-                      <td>
-                        adsad
-                      </td>
-                      <td class="d-flex justify-content-around">
-                        <div data-bs-toggle="tooltip" data-placement="top" title="Chi tiết">
-                          <a href="liet-ke-don-hang.html"><i class="fas fa-clipboard-list"></i></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>003</td>
-                      <td>Nigam</td>
-                      <td>zxcv</td>
-                      <td>Ho Chi Minh</td>
-                      <td>200/265</td>
-                      <td>Abc</td>
-                      <td class="d-flex justify-content-around">
-                        <div data-bs-toggle="tooltip" data-placement="top" title="Chi tiết">
-                          <a href="liet-ke-don-hang.html"><i class="fas fa-clipboard-list"></i></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <form action="#">
+              <div class="form-body">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label">Số tiền tạm ứng<span class="text-danger">*</span></label>
+                    <input type="number" name="money" class="form-control" placeholder="Số tiền tạm ứng" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn waves-effect waves-light btn-rounded btn-primary">Xác nhận</button>
+            </form>
           </div>
         </div>
       </div>
@@ -202,11 +127,6 @@
   <script src="../../assets/node_modules/toast-master/js/jquery.toast.js"></script>
   <script src="../dist/js/dashboard1.js"></script>
   <script src="../../assets/node_modules/toast-master/js/jquery.toast.js"></script>
-  <script>
-    $(function () {
-      $('#chat, #msg, #comment, #todo').perfectScrollbar();
-    });
-  </script>
 </body>
 
 </html>
